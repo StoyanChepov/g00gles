@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="identity">
+    <div class="brand">
+      <div class="site-logo">
+        <a href="{{ site.baseurl }}/"><span><img src="{{ site.baseurl }}/images/logo.png" alt="logo"></span></a>
+      </div>
+      <div class="site-branding">
+
+        <p class="site-title">
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </p>
+        <p class="site-description">
+          {{site.description}}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <a href="mailto:s.chepov@abv.bg">
+        <i class="fa fa-envelope"></i>
+        office@smartguide.net
+      </a>
+      <a href="#">
+        <i class="fa fa-phone-square"></i> +359 (2) 974-88-32
+      </a>
+    </div>
+  </div>
+  <nav class="navigation main">
+    <ul>
+      <li><a href="{{ site.baseurl }}/">За нас</a></li>
+      <div class="dropdown">
+        <li id="services"><a href="{{ site.baseurl }}/about">Услуги</a></li>
+        <div class="dropdown-content">
+          <a href="{{ site.baseurl }}/services/accregistration/">Регистрация на фирми</a>
+          <a href="{{ site.baseurl }}/services/taxconsultancyservice/">Данъчни консултации</a>
+          <a href="{{ site.baseurl }}/services/accconsultations/">Счетоводни услуги</a>
+          <a href="{{ site.baseurl }}/services/administrative/">Административни услуги</a>
+          <a href="{{ site.baseurl }}/services/accspecialized/">Специaлизирани услуги</a>
+        </div>
+      </div>
+      <li><a href="{{ site.baseurl }}/contacts">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
