@@ -3,6 +3,7 @@
 @import '_typography.scss';
 @import '_variables.scss';
 
+
 @-webkit-keyframes slideIn{0%{opacity:0;-webkit-transform:translateX(-5rem);transform:translateX(-5rem)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideIn{0%{opacity:0;-webkit-transform:translateX(-5rem);transform:translateX(-5rem)}to{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}html{background-color:#fff;margin:0!important;height:100%}
 .site-header div.identity,.site-header div.identity .brand,body{display:-webkit-box;display:-ms-flexbox;display:flex}
 .site,body{min-height:100vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}body{height:100%}.site{display:-webkit-box;display:-ms-flexbox;display:flex}div.uslugi div.detail li.no-bullet,ul{list-style-type:none}a{text-decoration:none}

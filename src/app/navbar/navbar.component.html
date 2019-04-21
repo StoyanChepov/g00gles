@@ -2,7 +2,7 @@
   <div class="identity">
     <div class="brand">
       <div class="site-logo">
-        <a href="{{ site.baseurl }}/"><span><img src="{{ site.baseurl }}/images/logo.png" alt="logo"></span></a>
+        <a href="/"><span><img class="logoImg" src="logo.png" alt="logo"></span></a>
       </div>
       <div class="site-branding">
 
@@ -13,12 +13,6 @@
           {{site.description}}
         </p>
       </div>
-    </div>
-    <div>
-      Register
-    </div>
-    <div>
-      Login
     </div>
     <div class="col-md-6">
       <a href="mailto:s.chepov@abv.bg">
@@ -32,18 +26,23 @@
   </div>
   <nav class="navigation main">
     <ul>
-      <li><a href="{{ site.baseurl }}/">За нас</a></li>
+      <li><a href="{{ site.baseurl }}/">About us</a></li>
       <div class="dropdown">
-        <li id="services"><a href="{{ site.baseurl }}/about">Услуги</a></li>
+        <li class="services"><a href="{{ site.baseurl }}/about">Offers</a></li>
         <div class="dropdown-content">
-          <a href="{{ site.baseurl }}/services/accregistration/">Регистрация на фирми</a>
-          <a href="{{ site.baseurl }}/services/taxconsultancyservice/">Данъчни консултации</a>
-          <a href="{{ site.baseurl }}/services/accconsultations/">Счетоводни услуги</a>
-          <a href="{{ site.baseurl }}/services/administrative/">Административни услуги</a>
-          <a href="{{ site.baseurl }}/services/accspecialized/">Специaлизирани услуги</a>
+          <a href="{{ site.baseurl }}/services/accregistration/">Sunglasses</a>
+          <a href="{{ site.baseurl }}/services/taxconsultancyservice/">Glasses</a>
+          <a href="{{ site.baseurl }}/services/accconsultations/">Accesories</a>
         </div>
       </div>
-      <li><a href="{{ site.baseurl }}/contacts">Контакти</a></li>
+      <li><a href="{{ site.baseurl }}/contacts">Contacts</a></li>
+      <div class="dropdown">
+        <li class="services"><a href="">Sign in</a></li>
+        <div class="dropdown-content">
+          <a href="">Sign up</a>
+        </div>
+      </div>
+      <li></li>
     </ul>
   </nav>
 </header>
