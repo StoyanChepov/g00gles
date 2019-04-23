@@ -11,7 +11,7 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.username = localStorage.getItem('username');
+    this.username = localStorage.getItem('name');
   }
 
 }
