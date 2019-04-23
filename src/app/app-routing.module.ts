@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+// Components
+import { LandingComponent } from './landing/landing.component';
+import { SigninComponent } from './authentication/signin/signin.component';
+import { SignupComponent } from './authentication/signup/signup.component';
+import { CreatePrescriptionComponent } from './prescription/create-prescription/create-prescription.component';
+import { AuthGuard } from './authentication/guards/auth.guard';
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: LandingComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'prescription/create', component: CreatePrescriptionComponent }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

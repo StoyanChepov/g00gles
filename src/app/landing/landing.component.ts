@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
+  username: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.username = localStorage.getItem('username');
   }
 
 }

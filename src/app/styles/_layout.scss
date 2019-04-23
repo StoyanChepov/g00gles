@@ -141,15 +141,7 @@ a{text-decoration: none;}
     }
 }
 //sass is comming
-    &-content {
-    display: flex;
-    flex-wrap:wrap;
-    padding: var(--spacing-site, 2em);
-    padding-top: 1rem;
-    flex: 1 0 auto;
-    margin: 0 auto;    
-    a{color: #031248}
-    }
+    
     .end{
     display: flex;
     justify-content: space-around;
@@ -270,50 +262,7 @@ div.silva
     float: right;
     margin-right: 2rem;
 }
-.container{
-        display: grid;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        grid-gap: 1.5rem;
-        grid-template-columns: 1fr 3fr 5fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-auto-flow: dense;
-       
-        .content_element{
-            grid-column-start: 2;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            text-align: center;
-    }
-        .message_box{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        } 
-        .location{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 3;
-            position: relative;
-            overflow: hidden;
-            iframe{
-            display: block;
-            width: 100%;
-            height: 60vh;        
-            }
-        }
-        .wrapper{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        } 
-         .form{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        } 
-    }
+
 
     .why-choose-us{
  display: grid;
@@ -379,38 +328,7 @@ div.uslugi{
         padding-left:0;
         padding-right:0; 
     }
-    .container{
-        
-        grid-gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-       
-        .content_element{
-            grid-column-start: 2;
-            grid-column-end: 4;
-            grid-row-start: 1;
-        }
-        .message_box{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        } 
-        .location{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        }
-        .wrapper{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        } 
-         .form{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        } 
-    }
+   
     .why-choose-us{
           /*  background: blue !important;*/
             grid-template-columns: 1fr 1fr 1fr;
@@ -438,32 +356,7 @@ div.uslugi{
      .site-header div.identity .site-branding p.site-description {
          display: none;
      }
-     .container{
-        grid-gap: 0.5rem;
-          grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        .content_element{
-            grid-column: 1 / -1;
-            grid-row-start: 1;
-        }
-        .message_box{
-             grid-column: 1 / -1;
-        grid-row-start: 2;
-        } 
-        .location{
-             grid-column: 1 / -1;
-        grid-row-start: 3;
-        }
-        .wrapper{
-        grid-column: 1 / -1;
-        grid-row-start: 4;
-        } 
-         .form{
-       grid-column: 1 / -1;
-        grid-row-start: 5;
-        } 
-       
-    }
+   
  .why-choose-us{
            /* background: red !important; */
             grid-template-columns: 1fr 1fr;

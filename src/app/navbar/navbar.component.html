@@ -7,10 +7,10 @@
       <div class="site-branding">
 
         <p class="site-title">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+          <a href="/"></a>
         </p>
         <p class="site-description">
-          {{site.description}}
+
         </p>
       </div>
     </div>
@@ -26,22 +26,49 @@
   </div>
   <nav class="navigation main">
     <ul>
-      <li><a href="{{ site.baseurl }}/">About us</a></li>
+      <li><a href="/">About us</a></li>
       <div class="dropdown">
-        <li class="services"><a href="{{ site.baseurl }}/about">Offers</a></li>
+        <li class="services"><a href="/about">Offers</a></li>
         <div class="dropdown-content">
-          <a href="{{ site.baseurl }}/services/accregistration/">Sunglasses</a>
-          <a href="{{ site.baseurl }}/services/taxconsultancyservice/">Glasses</a>
-          <a href="{{ site.baseurl }}/services/accconsultations/">Accesories</a>
+          <a href="/services/accregistration/">Sunglasses</a>
+          <a href="/services/taxconsultancyservice/">Glasses</a>
+          <a href="/services/accconsultations/">Accesories</a>
         </div>
       </div>
-      <li><a href="{{ site.baseurl }}/contacts">Contacts</a></li>
+      <li><a href="/contacts">Contacts</a></li>
       <div class="dropdown">
-        <li class="services"><a href="">Sign in</a></li>
+        <li *ngIf="!authService.isAuthenticated()" class="services"><a routerLink="/signin">Sign in</a></li>
         <div class="dropdown-content">
-          <a href="">Sign up</a>
+          <form class="beaty" #loginForm="ngForm" (ngSubmit)="signIn()">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email" name="email" required email ngModel #email="ngModel">
+              <div *ngIf="email.invalid && email.touched" class="alert alert-dark">
+                Please provide a correct email address!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" required minlength="4" ngModel #password="ngModel">
+              <div *ngIf="password.invalid && password.touched" class="alert alert-dark">
+                Password must have at least 4 characters
+              </div>
+            </div>
+            <div class="button1">
+              <button type="submit" class="btn btn-dark" [disabled]="loginForm.invalid">Sign In</button>
+            </div>
+          </form>
+          <li *ngIf="!authService.isAuthenticated()" class="nav-item">
+            Don't have an account?
+            <div class="button2">
+              <a class="btn btn-dark" routerLink="/signup">Sign Up</a>
+            </div>
+          </li>
         </div>
       </div>
+      <li *ngIf="authService.isAuthenticated()" class="services">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
       <li></li>
     </ul>
   </nav>
