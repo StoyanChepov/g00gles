@@ -20,6 +20,7 @@ import { PrescriptionUserComponent } from './prescription/prescription-user/pres
 import { PrescriptionDetailsComponent } from './prescription/prescription-details/prescription-details.component';
 import { UploadPrescriptionComponent } from './prescription/upload-prescription/upload-prescription.component';
 import { PrescriptionService } from './prescription/prescription.service';
+import { PrescriptionAllComponent } from './prescription/prescription-all/prescription-all.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PrescriptionService } from './prescription/prescription.service';
     CreatePrescriptionComponent,
     PrescriptionUserComponent,
     PrescriptionDetailsComponent,
-    UploadPrescriptionComponent
+    UploadPrescriptionComponent,
+    PrescriptionAllComponent
   ],
   imports: [
     BrowserModule,

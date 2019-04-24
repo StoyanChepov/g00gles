@@ -7,7 +7,7 @@ import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { CreatePrescriptionComponent } from './prescription/create-prescription/create-prescription.component';
 import { AuthGuard } from './authentication/guards/auth.guard';
-import { PrescriptionDetailsComponent } from './prescription/prescription-details/prescription-details.component';
+import { PrescriptionAllComponent } from './prescription/prescription-all/prescription-all.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'prescription/create', component: CreatePrescriptionComponent },
-  { path: 'prescription/all', component: PrescriptionDetailsComponent }
+  { path: 'prescription/all', component: PrescriptionAllComponent }
 ]
 
 @NgModule({

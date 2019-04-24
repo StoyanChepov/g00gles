@@ -2,7 +2,7 @@
   <div class="identity">
     <div class="brand">
       <div class="site-logo">
-        <a href="/"><span><img class="logoImg" src="logo.png" alt="logo"></span></a>
+        <a href="/"><span><img class="logoImg" src="../../favicon.ico" alt="logo"></span></a>
       </div>
       <div class="site-branding">
 
@@ -35,7 +35,7 @@
           <a routerLink="/prescription/all">All prescriptions</a>
         </div>
       </div>
-      <li><a href="/contacts">Contacts</a></li>
+      <li><a href="/">Contacts</a></li>
       <div class="dropdown">
         <li *ngIf="!authService.isAuthenticated()" class="services"><a routerLink="/signin">Sign in</a></li>
         <div class="dropdown-content">
