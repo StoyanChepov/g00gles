@@ -1,0 +1,146 @@
+.C_rx {
+  font-size: 14px;
+  line-height: 22px;
+}
+.C_rx * {
+  box-sizing: border-box;
+}
+.C_rxBorder {
+  border: 1px solid #ccc;
+  padding: 10px 7px;
+  margin-top: -1px;
+  position: relative;
+}
+.C_lensType {
+  padding: 0;
+}
+.C_lensType > * {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+.C_lensType > *.hover {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+}
+.C_txTr {
+  overflow: hidden;
+ 
+}
+.C_txTd {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 25%;
+}
+.C_txTd2 {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 50%;
+}
+.C_txTd3 {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 75%;
+}
+.C_rxTableTr {
+  margin-right: 20px;
+  display: inline-block;
+}
+.C_iText {
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+.C_newSelect {
+  max-width: 100px;
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.C_newSelect select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 0;
+  color: #666;
+  border-bottom: 1px solid #666;
+  display: inline-block;
+  padding: 1px 23px 2px 0;
+  border-radius: 0;
+  position: relative;
+  width: 119% \9;
+  font-weight: 400;
+  max-width: 150%;
+}
+.C_newSelect:after {
+  position: absolute;
+  bottom: 10px;
+  right: 4px;
+  z-index: 3;
+  font-size: 14px;
+  content: ">";
+  text-transform: none;
+  line-height: 1;
+  margin-bottom: -2px;
+  pointer-events: none;
+  text-rendering: auto;
+  z-index: 0 \9;
+  color: #666;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.pc-prescription-table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 14px;
+}
+.C_bt.b29c5dc {
+    background: #29c5dc;
+    color: #fff;
+    border: 1px solid #29c5dc;
+}
+.oh{
+  text-align: center;
+}
+.C_bt {
+   
+    border: 3px solid #333;
+    box-sizing: border-box;
+     text-align: center;
+    margin:10px auto;
+    font-size: 20px;
+    padding: 15px 30px;
+    transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+}
+button:disabled{
+  cursor: not-allowed;
+}
